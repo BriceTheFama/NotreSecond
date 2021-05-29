@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index');
-});
+})->name('accueil');
 Route::get('/a-propos',function(){
     return view('a-propos');
-});
+})->name('about');
 
-Route::get('/contact',[ContactController::class,'contact']);
-Route::get('/test',function(){ return view('test');});
+Route::get('/contact',[ContactController::class,'contact'])->name('contact');
+Route::get('/test',function(){ return view('test');})->name('test');
 Route::post('/contact',[ContactController::class,'sendEmail'])->name('contact.send');

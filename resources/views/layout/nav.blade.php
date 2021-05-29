@@ -41,10 +41,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
+                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                     </li>
 					<li class="nav-item">
-                        <a class="nav-link" href="/a-propos">A-propos</a>
+                        <a class="nav-link" href="{{ route('about') }}">A-propos</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
